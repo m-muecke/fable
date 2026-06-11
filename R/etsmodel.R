@@ -541,7 +541,7 @@ ets_fc_class1 <- function(h, last.state, trendtype, seasontype, damped, m, sigma
     .G[2, 1] <- par["beta"]
   }
   if (seasontype == "A") {
-    .G[3, 1] <- par["gamma"]
+    .G[p - m + 1, 1] <- par["gamma"]
   }
   mu <- numeric(h)
   Fj <- diag(p)

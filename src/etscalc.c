@@ -233,7 +233,7 @@ void forecast(double l, double b, double *s, int m, int trend, int season, doubl
       if(fabs(phi-1.0) < TOL)
         phistar = phistar + 1.0;
       else
-        phistar = phistar + pow(phi, (double) (i+1));
+        phistar = phistar + pow(phi, (double) (i+2));
     }
   }
 }
